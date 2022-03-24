@@ -1,5 +1,34 @@
-img.headerbg{
-    width: 100%;
-    height: 600px;
-    position: center;
+.header {
+    padding: 60px;
+    text-align: center;
+    background: url(../assets/bg-header.jpeg);
+    font-size: 30px;
+    height: 450px;
+}
+
+h1.header-white {
+    color: white;
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    flex-wrap: wrap-reverse;
+}
+
+a.menu {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+a.menu:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+.logo-header {
+    max-width: 30px;
+    max-height: 30px;
 }

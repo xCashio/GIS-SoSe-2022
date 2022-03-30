@@ -13,6 +13,8 @@
 <body>
     <header>
         <div class="navbar">
+            <img class="logo-header" src="assets/logo.svg" alt="logo" />
+            <img class="background-header" src="assets/bg-header.jpeg" alt="Background" />
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -22,11 +24,24 @@
                 </ul>
             </nav>
         </div>
+        <h1 class="header-white">Creating</h1>
     </header>
 
     <main>
-        <h1>Create new article</h1>
+        <h2>Create new article</h2>
         <p>You will be able to create new blog articles here!</p>
+
+        <form>
+            <label for="author">Author</label><br>
+            <input type="text" id="author" name="author" value="Write the authors name here"><br>
+            <label for="date">Release date</label><br>
+            <input type="text" id="date" name="date" value="Write the date here"><br>
+            <label for="picture">Picture</label><br>
+            <input type="text" id="picture" name="picture" value="Upload a picture"><br>
+            <label for="blogtext">Text</label><br>
+            <input type="text" id="blogtext" name="blogtext" value="Write or paste your blog text here"><br><br>
+            <input type="submit" value="Submit">
+        </form>
     </main>
 
     <footer>
@@ -35,6 +50,7 @@
                 <ul>
                     <li><a href="imprint.html">Imprint</a></li>
                     <li><a href="dataprotection.html">Data protection</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </div>

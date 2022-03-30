@@ -13,6 +13,8 @@
 <body>
     <header>
         <div class="navbar">
+            <img class="logo-header" src="assets/logo.svg" alt="logo" />
+            <img class="background-header" src="assets/bg-header.jpeg" alt="Background" />
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -26,7 +28,17 @@
 
     <main>
         <h1>Contact me</h1>
-        <p>Here you will find a contact form and some other options to get in touch with me soon.</p>
+        <form>
+            <label for="author">Your name</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="date">Your E-Mail</label><br>
+            <input type="text" id="mail" name="mail"><br>
+            <label for="picture">Subject</label><br>
+            <input type="text" id="subject" name="subject"><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <p>Besides this form you can also find me on <a href="#">Twitter</a> and <a href="#">LinkedIn</a>.</p>
     </main>
 
     <footer>
@@ -35,6 +47,7 @@
                 <ul>
                     <li><a href="imprint.html">Imprint</a></li>
                     <li><a href="dataprotection.html">Data protection</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </div>

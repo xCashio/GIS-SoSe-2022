@@ -1,3 +1,11 @@
+:root{
+    --text-white: rgb(255, 255, 255)
+}
+
+body, html{
+    margin: 0;
+    height: 100%;
+}
 .header {
     padding: 60px;
     text-align: center;
@@ -7,7 +15,7 @@
 }
 
 h1.header-white {
-    color: white;
+    color: var(--text-white);
 }
 
 .navbar-wrapper {
@@ -17,8 +25,8 @@ h1.header-white {
     flex-wrap: wrap-reverse;
 }
 
-a.menu {
-    color: white;
+a, menu {
+    color: var(--text-white);
     text-decoration: none;
     margin: 10px;
 }
@@ -28,7 +36,31 @@ a.menu:hover {
     color: gray;
 }
 
-.logo-header {
+#logo-header {
     max-width: 30px;
     max-height: 30px;
+    
 }
+
+h2 {
+    margin: 2em;
+
+}
+h2::first-letter{
+    font-size: larger;
+}
+
+@media only screen and (max-width: 660px) {
+    /* mobile */
+    .navbar-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navlinks{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+
+  }

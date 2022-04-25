@@ -6,6 +6,15 @@ body, html{
     margin: 0;
     height: 100%;
 }
+p {
+    font-family: geomanist;
+}
+
+@font-face {
+    font-family: geomanist;
+    src: url(../assets/geomanist-regular-webfont.woff);
+  }
+
 .header {
     padding: 60px;
     text-align: center;
@@ -44,11 +53,48 @@ a.menu:hover {
 
 h2 {
     margin: 2em;
+    text-align: center;
+    font-family: geomanist;
+    font-size: xx-large;
+    width: 100%;
 
 }
-h2::first-letter{
-    font-size: larger;
+#blog-intro::first-letter{
+    font-size: 1cm;
+    
 }
+.blog-text-full{
+    padding: 2em;
+    padding-top: 0;
+    hyphens: auto; 
+	text-align: justify;
+    width: 100%;
+    
+}
+.blog-text-50{
+    padding: 2em;
+    padding-bottom: 0;
+    padding-right: 0;
+    hyphens: auto; 
+	text-align: justify;
+    width: 47%;
+}
+.blog-pic-50{
+    width: 47%;
+    object-fit: cover;
+    padding-right: 2em;
+    max-height: 450px;
+    max-width: 800px;
+    align-items: center;
+}
+
+.blog-post{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4em;
+}
+
 
 @media only screen and (max-width: 660px) {
     /* mobile */
